@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   my-app:
-    image: alpine/git # Una imagen ligera con herramientas básicas
+    image: nginx # Una imagen ligera con herramientas básicas
     command: ["sh", "-c", "echo 'Contenedor iniciado. Esperando 60 segundos.' && sleep 60"] # Para mantener el contenedor vivo
     volumes:
       - ./:/app_data # Monta el directorio actual del repositorio en /app_data dentro del contenedor
